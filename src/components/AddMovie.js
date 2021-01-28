@@ -10,6 +10,7 @@ export const AddMovie = ({ addMovie }) => {
   const [Poster, setPoster] = useState("");
   const [Date, setDate] = useState("");
   const [Rating, setRating] = useState("");
+  const [trailer, setTrailer] = useState("");
 
   const submitMovie = () => {
     let newMovie = {
@@ -18,6 +19,7 @@ export const AddMovie = ({ addMovie }) => {
       Poster: Poster,
       date: Date,
       rating: Rating,
+      trailer: trailer,
     };
     addMovie(newMovie);
     handleClose();
@@ -62,6 +64,14 @@ export const AddMovie = ({ addMovie }) => {
                 type="text"
                 placeholder="Enter Poster"
                 onChange={(e) => setPoster(e.target.value)}
+              />
+            </Form.Group>
+            <Form.Group controlId="formBasicImage">
+              <Form.Label>Lien</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Enter lien"
+                onChange={(e) => setTrailer(e.target.value)}
               />
             </Form.Group>
 

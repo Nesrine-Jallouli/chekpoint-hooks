@@ -164,6 +164,22 @@ font-size: 25px;
   background-color: #5AACCF;
   
 }
+.description {
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+} 
+.description > h1{
+
+  color: #0F2347;
+}
+.description > p{
+  padding: 20px;
+}
+.description > .player{
+  margin-left: 350px;
+  margin-bottom: 10px;
+}
 
 @keyframes spin {
   0% { transform: rotate(0deg); }

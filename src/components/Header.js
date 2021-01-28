@@ -22,10 +22,7 @@ export const Header = (
         <h2>{text}</h2>
         </header>
         <form className="search">
-      <p><Rate
-        starIndex={setRatingSearch}
-        rating={ratingSearch}
-      /></p>
+        <p><Rate starIndex={setRatingSearch} rating={ratingSearch}/></p>
       <input className="input-search"
             name="search"
             type="text"
